@@ -5,24 +5,19 @@ public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (n<100 || n>999) {
+        if (n < 100 || n > 999) {
             System.out.println("Invalid Input");
+            return;
         }
         int ori=n;
-        int reve=0;
-        int count=0;
-        while (n > 0) {
-            reve=reve*10+n%10;
-            n=n/10;
-            count++;
-        }
-        if(count==3){
-        if (ori==reve) {
+        int fi=n/100;
+        int mi=(n/10)%10;
+        int la=n%10;
+        int reve=la*100+mi*10+fi;
+        if (ori == reve) {
             System.out.println("palindrome");
-        } 
-        else{
+        } else {
             System.out.println("not palindrome");
-        }
         }
     }
 }
