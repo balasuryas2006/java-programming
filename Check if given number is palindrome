@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n<100 || n>999) {
+            System.out.println("Invalid Input");
+        }
+        int ori=n;
+        int reve=0;
+        int count=0;
+        while (n > 0) {
+            reve=reve*10+n%10;
+            n=n/10;
+            count++;
+        }
+        if(count==3){
+        if (ori==reve) {
+            System.out.println("palindrome");
+        } 
+        else{
+            System.out.println("not palindrome");
+        }
+        }
+    }
+}
