@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int opt=sc.next().charAt(0);
+        float c;
+        switch(opt){
+            case '+':
+                c=a+b;
+                System.out.printf("Addition of two number is %.1f",c);
+                break;
+            case '-':
+                c=a-b;
+                System.out.printf("Subtraction of two number is %.1f",c);
+                break;
+            case '*':
+                c=a*b;
+                System.out.printf("Multiplication of two number is %.1f",c);
+                break;
+            case '/':
+                c=a/b;
+                System.out.printf("Division of two number is %.1f",c);
+                break;
+            default:
+                System.out.printf("Invalid Input");
+                
+        }
+        
+    }
+}
