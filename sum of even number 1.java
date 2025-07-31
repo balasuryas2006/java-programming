@@ -14,7 +14,7 @@ public class Solution {
         int sum=0;
         
         if(m>n && n>0 && n<30 && m>0 && m<30){
-                for(int i=n;i<m;i++){
+                for(int i=n;i<=m;i++){
                     if(i%2==0){
                         sum+=i;
                     }
